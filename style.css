@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+:root {
+    --corbody: #ebe5c5;
+    --cor01: #024a92;
+    --cor02: #1b5ba5;
+    --cor03: #356bb7;
+    --cor04: #4e7cca;
+    --cor05: #678cdc;
+
+    --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Merriweather", serif;
+    --fonte-android: "Playfair Display SC", serif;
+}
+
+body {
+    background-color: var(--corbody);
+    font-family: var(--fonte-padrao);
+
+}
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor05), var(--cor01));
+    text-align: center;
+    min-height: 180px;
+    padding-top: 2em;
+
+}
+
+
+
+header>h1 {
+    color: #ffff;
+    font-family: var(--fonte-destaque);
+    padding-bottom: px;
+    font-size: 2.5em;
+    text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.651);
+
+
+
+}
+
+
+header>p {
+    font-family: var(--fonte-android);
+    color: #ffff;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.651);
+    font-size: 1.1em;
+    margin-top: 5px;
+
+
+
+}
+
+
+
+nav {
+    background-color: var(--cor05);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+nav>a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+
+}
+
+
+
+
+nav>a:hover {
+    color: var(--cor01);
+    transition: 1s;
+}
+
+
+
+
+main {
+    background-color: #ffff;
+    /*Essa configuração foi aplicada para dar um tamanho minimo para dispositivos menores e o maximo para dispositivos maiores */
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.video {
+    background-color: var(--cor01);
+    padding: 1em;
+    margin: 0 -20px 15px;
+    /*Essa configuração estiliza margin-top 0, margin-right -20px, margin-bottom 15px*/
+    padding-bottom: 57%;
+    position: relative;
+    /*Define o posicionamento do elemento como relative, permitindo que ele seja posicionado em relação à sua posição normal. Isso também permite o uso de propriedades como top, right, bottom e left para ajustar sua posição.*/
+}
+
+
+.video>iframe {
+    position: absolute;
+    top: 5%;
+    /*Define que o iframe estará posicionado a 5% do topo do seu contêiner pai (.video). A porcentagem é calculada com base na altura do contêiner pai.*/
+    left: 5%;
+    /*Define que o iframe estará posicionado a 5% da esquerda do seu contêiner pai (.video). A porcentagem é calculada com base na largura do contêiner pai.*/
+    width: 90%;
+    /*Define que a largura do iframe será 90% da largura do seu contêiner pai (.video). Isso deixa 5% de espaço vazio à esquerda e 5% à direita, centralizando o iframe horizontalmente dentro do contêiner pai.*/
+    height: 90%;
+    /*Define que a altura do iframe será 90% da altura do seu contêiner pai (.video). Isso deixa 5% de espaço vazio no topo e 5% na parte inferior, centralizando o iframe verticalmente dentro do contêiner pai.*/
+
+}
+
+
+
+
+
+main h1 {
+    color: var(--cor03);
+    font-family: #a9c0f0;
+
+
+}
+
+
+
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor01);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor05), transparent);
+    padding-left: 10px;
+
+}
+
+
+
+
+
+main p {
+    margin: 1.1em 0;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+
+}
+
+
+
+
+
+
+
+
+main img {
+    width: 100%;
+    /*Essa configuração eu apliquei na imagem para elas se espremerem e se adaptarem quando a tela estiver reduziada */
+}
+
+
+
+
+
+
+
+main img.bugdroid-pq {
+    /*Essa configuração foi para diminuir minha imagem e centralizar ao meito da tela */
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+main article a:hover {
+    color: var(--cor01);
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+main a:visited {
+    color: var(--cor05);
+
+}
+
+
+
+
+
+
+
+main a {
+    text-decoration: none;
+
+}
+
+
+
+a.link-externo::after {
+    content: '\00A0\1F517';
+    /*Essa configuração estiliza depois da tag a: na class:"link-externo" colocar um espaço e um emoji  */
+}
+
+
+
+
+
+
+aside {
+    background-color: #7ea2f0d2;
+    border-radius: 0.5em;
+    padding: 0.6em;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.541);
+    /*Essa configuração estiliza 2px se desloca horizontal da esquerda para direira, 2px se desloca verticalmente de cima para baixo, 8px define o quanto de sombra será desfocado */
+    margin-top: 1.5em;
+}
+
+
+
+
+aside>h3 {
+    background-color: var(--cor01);
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    /*Essa configuração estiliza margin-top superior  -10px, margin-right superior -10px, 0 margin-bottom superior, margin-left superior -10px */
+    border-radius: 10px 10px 0 0;
+    /*Essa configuração estiliza 10px em cima na esquerda, 10px em cima na direita, 0 na parte de baixo da direita e 0 na parte de baixo a esquerda */
+    color: var(--corbody);
+
+
+}
+
+
+
+
+
+aside>ul {
+    list-style-type: '\2705\00A0\00A0';
+    /*Essa configuração estiliza o codigo \2705\ colocando um emoji e o codigo /00A0 coloca um espaço entre os check-box e a ul/li*/
+    list-style-position: inside;
+    /*Essa configuração estiliza colcoando os blullet para dentro da ul/li*/
+    columns: 2;
+    /*Essa configuração estiliza colocando colunas na ul/li*/
+
+
+}
+
+
+
+
+
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor05), var(--cor01));
+    padding: 1em;
+    text-align: center;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 0.8em;
+
+}
