@@ -16,6 +16,7 @@
     --cor03: #356bb7;
     --cor04: #4e7cca;
     --cor05: #678cdc;
+    --cor06: blue;
 
     --fonte-padrao: arial, verdana, Helvetica, sans-serif;
     --fonte-destaque: "Merriweather", serif;
@@ -42,13 +43,12 @@ header {
 header>h1 {
     color: #ffff;
     font-family: var(--fonte-destaque);
-    padding-bottom: px;
     font-size: 2.5em;
     text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.651);
-
-
-
+    padding-top: 1em;
 }
+
+
 
 
 header>p {
@@ -200,7 +200,6 @@ main img.bugdroid-pq {
 
 
 main article a:hover {
-    color: var(--cor01);
     text-decoration: underline;
 
 }
@@ -213,7 +212,7 @@ main article a:hover {
 
 
 main a:visited {
-    color: var(--cor05);
+    color: var(--cor06);
 
 }
 
